@@ -47,10 +47,13 @@ This repository address to install the OpenCV with DNN and CUDA support to launc
 
 ### For Visual Studio Code
 
+You must install the ext called Remote containers (ext install ms-vscode-remote.remote-containers).
+
 Add the "runArgs": ["--runtime=nvidia"] to devcontainer.json.
 
 ## REFERENCE
 
+- https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers
 - https://github.com/wang-xinyu/tensorrtx/tree/master/yolov4
 - https://github.com/mj8ac/trt-yolo-app_win64
 - https://github.com/NVIDIA-AI-IOT/deepstream_reference_apps

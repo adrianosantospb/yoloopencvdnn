@@ -3,7 +3,7 @@ FROM nvcr.io/nvidia/l4t-base:r32.5.0
 ENV DEBIAN_FRONTEND=noninteractive
 
 # install prerequisites
-RUN apt-get update && apt-get install -y build-essential cmake gcc g++ gdb clang rsync tar && apt-get libprotoc-dev clean
+RUN apt-get update && apt-get install -y build-essential cmake gcc g++ gdb clang rsync tar && apt-get clean
 
-COPY install_opencv.sh install_opencv.sh
+COPY . .
 RUN bash install_opencv.sh

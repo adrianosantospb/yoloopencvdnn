@@ -1,0 +1,7 @@
+version: '3.6'
+services:
+  yoloopencvdnn:
+    build: ./Dockerfile
+    container_name: "opencvdnn"
+    ports:
+      - "22:22"
