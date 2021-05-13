@@ -1,4 +1,4 @@
-# OpenCV with DNN CUDA support to YOLO
+# OpenCV with DNN CUDA support for YOLO
 
 Adriano Santos.
 
