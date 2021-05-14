@@ -2,6 +2,8 @@ FROM nvcr.io/nvidia/tensorrt:20.12-py3
 
 ENV DEBIAN_FRONTEND=noninteractive
 
+WORKDIR /home/yoloopencvdnn
+
 # install prerequisites
 RUN apt-get update && apt-get install -y --no-install-recommends \
 	protobuf-compiler \

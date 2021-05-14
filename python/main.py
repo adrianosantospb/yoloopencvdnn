@@ -10,7 +10,7 @@ net = cv.dnn.readNet(model="../models/yolov3.weights", config="../models/yolov3.
 net.setPreferableBackend(cv.dnn.DNN_BACKEND_CUDA)
 net.setPreferableTarget(cv.dnn.DNN_TARGET_CUDA) # if you want test FP16, you must change it for DNN_TARGET_CUDA_FP16
 
-image = cv.imread("../yolos/dog.jpg")
+image = cv.imread("../models/dog.jpg")
 blob = cv.dnn.blobFromImage(image, 0.00392, (416, 416), [0, 0, 0], True, False)
 
 # warmup
