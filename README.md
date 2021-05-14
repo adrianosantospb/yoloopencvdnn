@@ -38,11 +38,6 @@ This repository address to install the OpenCV with DNN and CUDA support to launc
 
 </details>
 
-
-### ubuntu & L4T (jetson)
-
-```
-```
 ## DEVELOP ENV.
 
 ### For Visual Studio Code
