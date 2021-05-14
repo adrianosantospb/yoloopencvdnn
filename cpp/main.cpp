@@ -15,9 +15,9 @@ int main()
 	double NMSThreshold = 0.4;
 	int numClasses = 80;
 
-	std::string weightsFile = "../yolos/yolov3.weights";
-	std::string configFile = "../yolos/yolov3.cfg";
-	std::string imageFile = "../yolos/dog.jpg";
+	std::string weightsFile = "../models/yolov3.weights";
+	std::string configFile = "../models/yolov3.cfg";
+	std::string imageFile = "../models/dog.jpg";
 	
 	// Model loading
 	auto net = cv::dnn::readNet(weightsFile, configFile);

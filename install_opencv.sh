@@ -32,8 +32,10 @@ make all -j$(nproc)
 make install
 ldconfig
 
-rm ./opencv.zip ./opencv_contrib.zip
-rm -rd ./opencv-master
-rm -rd ./opencv_contrib-master
+# Clear
+rm /home/yoloopencvdnn/opencv.zip 
+rm /home/yoloopencvdnn/opencv_contrib.zip
+rm -rd /home/yoloopencvdnn/opencv-master
+rm -rd /home/yoloopencvdnn/opencv_contrib-master
 
 exit 0

@@ -23,6 +23,8 @@ cmake -DOPENCV_EXTRA_MODULES_PATH=../opencv_contrib-master/modules \
     -D OPENCV_ENABLE_NONFREE=ON \
     -D WITH_NVCUVID=ON \
     -D CUDA_ARCH_BIN="5.3 6.2 7.2" \
+    -D BUILD_OPENCV_python3=ON \
+    -D BUILD_OPENCV_PYTHON2=ON \
     ../opencv-master
 
 # Build
