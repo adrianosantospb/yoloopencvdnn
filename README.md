@@ -5,7 +5,7 @@ Adriano Santos.
 
 ## INTRODUCTION
 
-This repository address to install the OpenCV with DNN and CUDA support to launch the YOLO models. You can use it as you want. You may add the weights (Darknet format) and the config file (cfg file) into the models folder.
+This repository address to install the OpenCV with DNN and CUDA support to launch the YOLO models. You can use it as you want. You must add the weights (Darknet format) and the config file (cfg file) into the models folder.
 
 
 ## PLATFORM & BENCHMARK
@@ -19,22 +19,28 @@ This repository address to install the OpenCV with DNN and CUDA support to launc
 
 ##### C++
 
-|  model  |  size   |  gpu   | fp32/fps | fp16/fps | INT8/fps |
+|  model  |  size   |  gpu   | fp32 - inf.time | fp16 - inf.time | INT8 - inf.time |
 | :-----: | :-----: | :----: | :--: | :--: | :--: |
-| yolovV3 | 416x416 | 1080ti | 17ms/58.82  |  8ms/125   | /  |
+| yolovV3 | 416x416 | RX 2070 | 58.82 - 17ms  |  125 - 8ms   | /  |
 
 ##### Python
 
-|  model  |  size   |  gpu   | fp32/fps | fp16/fps | INT8/fps |
+|  model  |  size   |  gpu   | fp32 - inf.time | fp16 - inf.time | INT8 - inf.time |
 | :-----: | :-----: | :----: | :--: | :--: | :--: |
-| yolovV3 | 416x416 | 1080ti | 17.97ms/55.64  |  9.14ms/109.37   | /  |
+| yolovV3 | 416x416 | RX 2070 | 55.89 - 17.89ms  |  109.46 - 9.13ms   | /  |
 
 
-#### Jetson NX with Jetpack4.4.1 (inference / detect time)
+#### Jetson NX
 
-|      model      |      size      |  gpu   | fp32 | fp16 | INT8 |
-| :-------------: | :----: | :--: | :--: | :--: | :--: |
-| yolov3 | 416x416 |  |  |    | |
+|  model  |  size   |  gpu   | fp32 - inf.time | fp16 - inf.time | INT8 - inf.time |
+| :-----: | :-----: | :----: | :--: | :--: | :--: |
+| yolovV3 | 416x416 | RX 2070 | 7.19 - 139ms  |  17.24 - 58ms   | /  |
+
+##### Python
+
+|  model  |  size   |  gpu   | fp32 - inf.time | fp16 - inf.time | INT8 - inf.time |
+| :-----: | :-----: | :----: | :--: | :--: | :--: |
+| yolovV3 | 416x416 | RX 2070 | 7.14 - 139.95ms  |  16.96 - 58.96   | /  |
 
 </details>
 

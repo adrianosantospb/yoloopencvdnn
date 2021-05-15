@@ -8,9 +8,9 @@ num_classes = 80
 
 net = cv.dnn.readNet(model="../models/yolov3.weights", config="../models/yolov3.cfg")
 net.setPreferableBackend(cv.dnn.DNN_BACKEND_CUDA)
-net.setPreferableTarget(cv.dnn.DNN_TARGET_CUDA) # if you want test FP16, you must change it for DNN_TARGET_CUDA_FP16
+net.setPreferableTarget(cv.dnn.DNN_TARGET_CUDA_FP16) # if you want test FP16, you must change it for DNN_TARGET_CUDA_FP16
 
-image = cv.imread("../models/dog.jpg")
+image = cv.imread("../models/classic.jpg")
 blob = cv.dnn.blobFromImage(image, 0.00392, (416, 416), [0, 0, 0], True, False)
 
 # warmup
