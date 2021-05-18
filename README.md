@@ -5,8 +5,7 @@ Adriano Santos.
 
 ## INTRODUCTION
 
-This repository address to install the OpenCV with DNN and CUDA support to launch the YOLO models. You can use it as you want. You must add the weights (Darknet format) and the config file (cfg file) into the models folder.
-
+This repository address installing the OpenCV with DNN and CUDA support to launch the YOLO models. You can use it as you want. You must add the weights (Darknet format) and the config file (cfg file) into the model's folder.
 
 ## PLATFORM & BENCHMARK
 
